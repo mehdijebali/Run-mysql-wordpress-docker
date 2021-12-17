@@ -1,8 +1,8 @@
-version: '3' #Specifies the Compose file syntax version. 
+version: '3'  
 
-services: #service is the name for a “Container in production”
-  db: #container service name
-    image: mysql:latest #optional, specify if build specific
+services: 
+  db: 
+    image: mysql:latest 
     environment: 
       MYSQL_ROOT_PASSWORD: mypassword 
       MYSQL_DATABASE: wordpress
@@ -22,6 +22,6 @@ services: #service is the name for a “Container in production”
       WORDPRESS_DB_USER: wordpressuser
       WORDPRESS_DB_PASSWORD: wordpress
     
-volumes: #Optional, Mounts a linked path on the host machine that can be used by the container.
+volumes: 
   db_data:
 
